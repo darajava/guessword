@@ -6,6 +6,8 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
   (config) => {
+    config.headers["User-Agent"] = "axios"; // or any non-browser string
+    config.headers["ngrok-skip-browser-warning"] = "true"; // optional but effective
     return config;
   },
   (error) => {
