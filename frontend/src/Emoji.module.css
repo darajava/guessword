@@ -1,0 +1,22 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.emoji {
+  display: inline-block;
+  font-size: 2rem;
+  animation: fadeInOut 1s ease forwards;
+  pointer-events: none;
+  z-index: 1;
+}
